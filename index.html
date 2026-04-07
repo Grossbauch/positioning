@@ -1,35 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Практика позиционирования</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <div class="container">
         <div class="square logo-japan">
-            <div class="logo-japan_circle"></div>
+            <div class="logo-japan__circle"></div>
         </div>
         <div class="square windows">
-            <div class="windows_cube windows_cube1"></div>
-            <div class="windows_cube windows_cube2"></div>
-            <div class="windows_cube windows_cube3"></div>
-            <div class="windows_cube windows_cube4"></div>
+            <div class="windows__cube windows__cube1"></div>
+            <div class="windows__cube windows__cube2"></div>
+            <div class="windows__cube windows__cube3"></div>
+            <div class="windows__cube windows__cube4"></div>
         </div>
     </div>
-
-    
 
     <button class="btn" id="openBtn">Открыть модальное окно</button>
 
     <div class="overlay" id="overlay">
         <div class="modal">
             <h2>Header</h2>
-            <p>ловииоавиоватоитватдтдвалттлвамлтватлд мыоаозвытлзатвлдыатлдвытдатдвылдтатлдвыатлдвытлдатлд атлдвыдтлавтлдыатлдвытлдатлдвытлдавтлыдатлвытлдатлвылтатл атлдывтлдавытлдатлвытлавтлыдатлвылтдатлдвытлалвтыдлатдвытлажыавлта аьвыьджавджыаьдвыьдаджвы твитлщвпитваитлшатлшлтл тлптлваитлдпптлдитлдптилдпадлитлдпалдт тлптлдватлдватлдптлдватлпдватлдптлдва</p>
+            <p>ловииоавиоватоитватдтдвалттлвамлтватлд мыоаозвытлзатвлдыатлдвытдатдвылдтатлдвыатлдвытлдатлд
+                атлдвыдтлавтлдыатлдвытлдатлдвытлдавтлыдатлвытлдатлвылтатл
+                атлдывтлдавытлдатлвытлавтлыдатлвылтдатлдвытлалвтыдлатдвытлажыавлта аьвыьджавджыаьдвыьдаджвы
+                твитлщвпитваитлшатлшлтл тлптлваитлдпптлдитлдптилдпадлитлдпалдт тлптлдватлдватлдптлдватлпдватлдптлдва</p>
+
+            <div class="load">
+                <span class="load-text load-text--black">Loading...</span>
+                <div class="redbar" id="progressBar">
+                    <span class="load-text load-text--white">Loading...</span>
+                </div>
+            </div>
+
             <button class="close" id="closeBtn">Close</button>
         </div>
     </div>
 
     <script src="index.js"></script>
 </body>
+
 </html>
