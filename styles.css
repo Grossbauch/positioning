@@ -102,4 +102,52 @@
 .progress-text-light {
     color: white;
     width: 0;
+.square {
+    width: 100px;
+    height: 100px;
+    border: 1px solid #000;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-japan {
+    height: 80px;
+}
+
+.logo-japan_circle {
+    width: 50px;
+    height: 50px;
+    background-color: red;
+    border-radius: 50%;
+}
+
+.windows {
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.windows_cube {
+    width: 45px;
+    height: 45px;
+}
+
+.windows_cube1 {
+    background-color: orangered;
+}
+
+.windows_cube2 {
+    background-color: greenyellow;
+}
+
+.windows_cube3 {
+    background-color: skyblue;
+}
+
+.windows_cube4 {
+    background-color: yellow;
 }
