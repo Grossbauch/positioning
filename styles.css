@@ -124,3 +124,38 @@
     color: white;
     width: 640px; 
 }
+
+.accordion_content {
+    max-height: 0;
+    overflow: hidden;
+    background: white;
+    border-radius: 0 0 20px 20px;
+    padding: 0 20px;
+}
+
+.accordion_item input:checked ~ .accordion_content {
+    max-height: 300px;
+    padding: 0 20px 6px 20px;
+}
+
+.accordion_item {
+    margin-bottom: 12px;
+    border: 1px solid #696969;
+    border-radius: 6px;
+    background: #cecece;
+}
+
+.accordion_item input {
+    display: none;
+}
+
+.accordion_label::before {
+    content: ">";
+    font-size: 14px;
+    display: inline-block;
+    width: 20px;
+}
+
+.accordion_item input:checked ~ .accordion_label::before {
+    transform: rotate(90deg);
+}
