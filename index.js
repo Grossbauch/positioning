@@ -9,6 +9,23 @@ const overlay = document.getElementById('overlay');
 const openBtn = document.getElementById('openBtn');
 const closeBtn = document.getElementById('closeBtn');
 
-openBtn.onclick = () => overlay.classList.add('active');
-closeBtn.onclick = () => overlay.classList.remove('active');
-overlay.onclick = (e) => { if (e.target === overlay) overlay.classList.remove('active'); };
+function closeModal() {
+    overlay.classList.remove('active');
+}
+
+function openModal() {
+    overlay.classList.add('active');
+}
+
+overlay.onclick = (e) => {
+    if (e.target === overlay) closeModal();
+};
+
+openBtn.onclick = () => openModal();
+closeBtn.onclick = () => closeModal();
+
+document.onkeydown = (e) => {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) {
+        closeModal();
+    }
+};
