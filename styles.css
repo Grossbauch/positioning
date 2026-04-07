@@ -33,21 +33,10 @@
     height: 45px;
 }
 
-.windows__cube1 {
-    background-color: orangered;
-}
-
-.windows__cube2 {
-    background-color: greenyellow;
-}
-
-.windows__cube3 {
-    background-color: skyblue;
-}
-
-.windows__cube4 {
-    background-color: yellow;
-}
+.windows__cube1 { background-color: orangered; }
+.windows__cube2 { background-color: greenyellow; }
+.windows__cube3 { background-color: skyblue; }
+.windows__cube4 { background-color: yellow; }
 
 .btn {
     padding: 12px 24px;
@@ -60,7 +49,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -90,6 +79,7 @@
     cursor: pointer;
 }
 
+/* СТИЛИ ПРОГРЕСС-БАРА */
 .load {
     width: 100%;
     height: 30px;
@@ -132,5 +122,5 @@
 
 .load-text--white {
     color: white;
-    width: 600px;
+    width: 640px; 
 }
